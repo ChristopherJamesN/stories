@@ -20,6 +20,7 @@ class PostsController < ApplicationController
     @post = Post.new_draft_for(current_user)
   end
 
+  #test comment
   def create
     @post = current_user.posts.build(post_params)
     if @post.publish
